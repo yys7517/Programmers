@@ -23,6 +23,11 @@ public class ProAlgoPract_체육복 {
         Arrays.sort(lost);
         Arrays.sort(reserve);
 
+        // 오름차순 정렬 - 퀵 정렬? 이게 정렬해야 처리속도 ? 정렬
+        // 90점 - 프로그래머스나 백준이나 이런데서는 알고리즘 문제 제출
+        // 처리속도 (성능)
+        // 90점
+
         // 이제 여벌 체육복이 있는 친구들이 빌려주면 answer의 값은 증가될 수 있음.
 
         for ( int i = 0; i < lost.length; i++) {
