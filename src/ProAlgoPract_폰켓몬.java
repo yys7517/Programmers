@@ -11,8 +11,7 @@ public class ProAlgoPract_폰켓몬 {
 	}
 public static int solution(int[] nums) {
 		
-		int count;
-        
+
         int [] solve = new int [ nums.length / 2 ];
         
         // 왜 이거 안쓰면 틀리지 ?
@@ -21,12 +20,11 @@ public static int solution(int[] nums) {
         solve[0] = nums[0];
         // System.out.println(solve[0]);
         
-        int temp = nums[0];
-        solve[0] = nums[0];
-        
+        int temp = solve[0];
+
         int j = 1;
         for ( int i = 1; i < nums.length; i++ ) {
-        	
+
         	if ( temp != nums[i] ) {
         		
         		if ( j >= solve.length ) 
@@ -41,10 +39,12 @@ public static int solution(int[] nums) {
         // System.out.println(Arrays.toString(solve));
         
         
-        int temp1 = solve[0];
-        count = 1;
+        int temp1 = solve[0];	// 임시 저장공간
+
+        int count = 1;	// 종류 갯수
+
         for ( int k = 1 ; k < solve.length; k++) {
-        	if ( temp1 != solve[k] && solve[k] != 0) {
+        	if ( temp1 != solve[k] && solve[k] != 0 ) {
         		count++;
         	}
         }
