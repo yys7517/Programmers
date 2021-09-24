@@ -2,6 +2,11 @@ import java.util.Arrays;
 
 public class ProAlgoPract_K번째수 {
     public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer();
+        sb.append("Zbcdefg");
+        sb.reverse();
+        sb.toString();
+
         int[] array = {1, 5, 2, 6, 3, 7, 4};
         int[][] commands = {
                 {2,5,3},

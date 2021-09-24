@@ -33,6 +33,7 @@ public class ProAlgoPract_소수찾기 {
                     // 2 부터 자기 자신 -1의 수와 나눠가면서 나누어지면 소수가 아님.
                 }
             }
+
             // 반복문을 무사히 끝내면 소수인것임.
             return true;
         }
