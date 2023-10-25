@@ -1,3 +1,5 @@
+package Java;
+
 public class ProAlgoPract_수박수박수 {
     public static void main(String[] args) {
         Solution s = new Solution();

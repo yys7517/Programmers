@@ -1,3 +1,5 @@
+package Java;
+
 import java.util.Arrays;
 
 public class ProAlgoPract_로또의최고순위와최저순위 {

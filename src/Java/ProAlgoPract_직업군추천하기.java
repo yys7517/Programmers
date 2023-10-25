@@ -1,3 +1,5 @@
+package Java;
+
 import java.util.*;
 
 public class ProAlgoPract_직업군추천하기 {

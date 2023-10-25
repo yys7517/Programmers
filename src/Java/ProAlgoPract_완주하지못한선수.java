@@ -1,3 +1,5 @@
+package Java;
+
 import java.util.*;
 
 public class ProAlgoPract_완주하지못한선수 {

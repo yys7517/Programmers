@@ -1,3 +1,5 @@
+package Java;
+
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -75,7 +77,6 @@ public class ProAlgoPract_비밀지도 {
 //        }
 ////        System.out.println();
 ////        System.out.println("a2 배열 ");
-
 
 
         for( int i = 0 ; i < arr2.length; i++ ) {

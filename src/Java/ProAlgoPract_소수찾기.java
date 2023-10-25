@@ -1,3 +1,5 @@
+package Java;
+
 public class ProAlgoPract_소수찾기 {
 
     public static void main(String[] args) {

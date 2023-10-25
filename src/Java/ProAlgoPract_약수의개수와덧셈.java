@@ -1,3 +1,5 @@
+package Java;
+
 public class ProAlgoPract_약수의개수와덧셈 {
     public static void main(String[] args) {
         int result = solution(13,17);

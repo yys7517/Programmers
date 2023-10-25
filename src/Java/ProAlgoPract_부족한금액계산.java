@@ -1,3 +1,5 @@
+package Java;
+
 public class ProAlgoPract_부족한금액계산 {
     public static void main(String[] args) {
         int money = 30;

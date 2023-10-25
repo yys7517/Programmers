@@ -1,3 +1,5 @@
+package Java;
+
 public class ProAlgoPract_예산 {
     public static void main(String[] args) {
         int[] d = { 2,2,3,3 };
