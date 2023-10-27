@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f464f7a5-0232-467a-8f7f-4d790235982b" name="Default Changelist" comment="Package 이동">
-      <change afterPath="$PROJECT_DIR$/src/Kotlin/약수의 합.kt" afterDir="false" />
+    <list default="true" id="f464f7a5-0232-467a-8f7f-4d790235982b" name="Default Changelist" comment="정수 내림차순 배치">
+      <change afterPath="$PROJECT_DIR$/src/Kotlin/하샤드 수.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_3진법뒤집기.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_K번째수.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_두개뽑아서더하기.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_로또의최고순위와최저순위.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_문자열내림차순으로배치.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_부족한금액계산.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_비밀지도.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_상호평가.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_소수찾기.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_수박수박수.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_실패율.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_약수의개수와덧셈.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_예산.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_완주하지못한선수.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_직업군추천하기.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_체육복.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/ProAlgoPract_폰켓몬.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programmers/Solution.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,17 +46,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/yys75/IdeaProjects/Programmers"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yys75/IdeaProjects/Programmers&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="약수의_합Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Kotlin.약수의_합Kt" />
+}</component>
+  <component name="RunManager" selected="Kotlin.하샤드_수Kt">
+    <configuration name="X만큼_간격이_있는_n개의_숫자Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Kotlin.X만큼_간격이_있는_n개의_숫자Kt" />
+      <module name="Programmers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="하샤드_수Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Kotlin.하샤드_수Kt" />
+      <module name="Programmers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="문자열을_정수로_바꾸기Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Kotlin.문자열을_정수로_바꾸기Kt" />
+      <module name="Programmers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="정수_제곱근_판별Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Kotlin.정수_제곱근_판별Kt" />
+      <module name="Programmers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="정수_내림차순_배치Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Kotlin.정수_내림차순_배치Kt" />
+      <module name="Programmers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="자연수_뒤집어_배열로_만들기Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Kotlin.자연수_뒤집어_배열로_만들기Kt" />
       <module name="Programmers" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -46,7 +99,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.약수의_합Kt" />
+        <item itemvalue="Kotlin.하샤드_수Kt" />
+        <item itemvalue="Kotlin.문자열을_정수로_바꾸기Kt" />
+        <item itemvalue="Kotlin.자연수_뒤집어_배열로_만들기Kt" />
+        <item itemvalue="Kotlin.X만큼_간격이_있는_n개의_숫자Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -58,7 +114,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634894140042</updated>
-      <workItem from="1698224461836" duration="1560000" />
+      <workItem from="1698224461836" duration="6198000" />
+      <workItem from="1698390638075" duration="296000" />
     </task>
     <task id="LOCAL-00001" summary="Package 이동">
       <created>1698224534665</created>
@@ -74,7 +131,56 @@
       <option name="project" value="LOCAL" />
       <updated>1698224549978</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="약수의 합">
+      <created>1698231186445</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698231186445</updated>
+    </task>
+    <task id="LOCAL-00004" summary="나머지가 1이 되는 수 찾기">
+      <created>1698231746143</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698231746143</updated>
+    </task>
+    <task id="LOCAL-00005" summary="간격이 있는 n개의 숫자">
+      <created>1698232699447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698232699447</updated>
+    </task>
+    <task id="LOCAL-00006" summary="자연수n 뒤집어 배열로 만들기">
+      <created>1698233070963</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698233070963</updated>
+    </task>
+    <task id="LOCAL-00007" summary="문자열을 정수로 바꾸기">
+      <created>1698235059555</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698235059555</updated>
+    </task>
+    <task id="LOCAL-00008" summary="정수 제곱근 판별">
+      <created>1698235908262</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698235908262</updated>
+    </task>
+    <task id="LOCAL-00009" summary="정수 내림차순 배치">
+      <created>1698236409114</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698236409114</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +199,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Package 이동" />
-    <option name="LAST_COMMIT_MESSAGE" value="Package 이동" />
+    <MESSAGE value="약수의 합" />
+    <MESSAGE value="나머지가 1이 되는 수 찾기" />
+    <MESSAGE value="간격이 있는 n개의 숫자" />
+    <MESSAGE value="자연수n 뒤집어 배열로 만들기" />
+    <MESSAGE value="문자열을 정수로 바꾸기" />
+    <MESSAGE value="정수 제곱근 판별" />
+    <MESSAGE value="정수 내림차순 배치" />
+    <option name="LAST_COMMIT_MESSAGE" value="정수 내림차순 배치" />
   </component>
 </project>
