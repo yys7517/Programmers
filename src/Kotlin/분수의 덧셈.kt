@@ -1,7 +1,6 @@
 package Kotlin
 
 import kotlin.math.max
-import kotlin.math.min
 
 fun main() {
     println(
@@ -29,7 +28,7 @@ private fun solution(numer1: Int, denom1: Int, numer2: Int, denom2: Int): IntArr
 
     var gcd = 1
     val max = max(resultDenom, resultNum)
-    val min = min(resultDenom, resultNum)
+
     for(i in max downTo 1) {
         if( resultDenom % i == 0 && resultNum % i == 0 ) {
             gcd = i
