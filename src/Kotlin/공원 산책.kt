@@ -39,100 +39,105 @@ fun main() {
 private fun solution(park: Array<String>, routes: Array<String>): IntArray {
     var answer: IntArray = intArrayOf()
 
-    var x = 0
-    var y = 0
+    // 장애물을 지나는 명령은 무시
 
     val arr = Array(park.size) { CharArray(park[0].length) }
+    var row = 0
+    var col = 0
+
     for( i in park.indices ) {
-        for(j in park[i].indices) {
+        for( j in park[i].indices ) {
             arr[i][j] = park[i][j]
-//            print("${arr[i][j]} ")
-            if( arr[i][j] == 'S' ) {
-                // 시작점
-                x = i
-                y = j
+            // print(arr[i][j]+ " ")
+
+            if(arr[i][j] == 'S') {
+                row = i
+                col = j
             }
         }
-//        println()
+        // println()
     }
+    // println("시작점: $row, $col")
 
-//    println("시작점 : $x, $y")
+    // 주어진 방향으로 이동할 때 공원을 벗어난다면, 명령을 무시하고 다음 명령을 수행
+    // 주어진 방향으로 이동 중 장애물을 만난다면, 명령을 무시하고 다음 명령을 수행
+    routes.forEach {
+        // ex) it = E 2
+        val op = it.split(" ")[0]
+        val n = it.split(" ")[1].toInt()
 
-    val width = park[0].length
-    val height = park.size
-
-    for( route in routes ) {
-        val routeInfo = route.split(" ")
-        val op = routeInfo[0]
-        val n = routeInfo[1].toInt()
+        var moveToCol = col
+        var moveToRow = row
 
         var hasHuddle = false
-        // 주어진 방향으로 이동할 때 공원을 벗어난다면, 명령을 무시하고 다음 명령을 수행
-        // 주어진 방향으로 이동 중 장애물을 만난다면, 명령을 무시하고 다음 명령을 수행
+
         when(op) {
-            "W" -> {
-                var tempY = y
-                // 공원을 벗어나지 않고
-                if(y-n in 0..width-1) {
-                    // 경로에 장애물이 있는지
-                    for(i in 1..n) {
-                        tempY -= 1
-                        if( park[x][tempY] == 'X' ) {
-                            hasHuddle = true
-                        }
-                    }
-
-                    if(!hasHuddle) y = tempY
-                }
-            }
             "E" -> {
-                var tempY = y
-                // 공원을 벗어나지 않고
-                if(y+n in 0..width-1) {
-                    // 경로에 장애물이 있는지
-                    for(i in 1..n) {
-                        tempY += 1
-                        if( park[x][tempY] == 'X' ) {
+                // 공원을 벗어나지 않을 때만 명령을 시행
+                if( col + n < arr[0].size ) {
+                    // 이동 중 장애물을 만나는지
+                    for( i in 1..n ) {
+                        moveToCol++
+                        if(arr[moveToRow][moveToCol] == 'X') {
                             hasHuddle = true
+                            break
                         }
                     }
-
-                    if(!hasHuddle) y = tempY
                 }
             }
+
+            "W" -> {
+                // 공원을 벗어나지 않을 때만 명령을 시행
+                if( col - n >= 0 ) {
+                    // 이동 중 장애물을 만나는지
+                    for( i in 1..n ) {
+                        moveToCol--
+                        if(arr[moveToRow][moveToCol] == 'X') {
+                            hasHuddle = true
+                            break
+                        }
+                    }
+                }
+            }
+
             "S" -> {
-                var tempX = x
-                // 공원을 벗어나지 않고
-                if(x+n in 0..height-1) {
-                    // 경로에 장애물이 있는지
-                    for(i in 1..n) {
-                        tempX += 1
-                        if( park[tempX][y] == 'X' ) {
+                // 공원을 벗어나지 않을 때만 명령을 시행
+                if( row + n < arr.size ) {
+                    // 이동 중 장애물을 만나는지
+                    for( i in 1..n ) {
+                        moveToRow++
+                        if(arr[moveToRow][moveToCol] == 'X') {
                             hasHuddle = true
+                            break
                         }
                     }
-
-                    if(!hasHuddle) x = tempX
                 }
             }
-            else -> {
-                var tempX = x
-                // 공원을 벗어나지 않고
-                if(x-n in 0..height-1) {
-                    // 경로에 장애물이 있는지
-                    for(i in 1..n) {
-                        tempX -= 1
-                        if( park[tempX][y] == 'X' ) {
+
+            "N" -> {
+                // 공원을 벗어나지 않을 때만 명령을 시행
+                if( row - n >= 0 ) {
+                    // 이동 중 장애물을 만나는지
+                    for( i in 1..n ) {
+                        moveToRow--
+                        if(arr[moveToRow][moveToCol] == 'X') {
                             hasHuddle = true
+                            break
                         }
                     }
-
-                    if(!hasHuddle) x = tempX
                 }
             }
+
+            else -> {}
+        }
+
+        // 장애물을 만나지 않았을 때만 이동 경로를 갱신
+        if(!hasHuddle) {
+            row = moveToRow
+            col = moveToCol
         }
     }
 
-    answer = intArrayOf(x, y)
+    answer = intArrayOf(row, col)
     return answer
 }
