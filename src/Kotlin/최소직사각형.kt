@@ -1,17 +1,25 @@
 package Kotlin
 
+import kotlin.math.*
+
 /**
  * 모든 명함을 수납할 수 있는 가장 작은 지갑을 만들 때, 지갑의 크기를 return
  * 명함의 가로 길이와 세로 길이의 정보가 담겨진 2차원 배열
 
- * Hint ) 사실 어떤 모서리는 가로가 될 수도 있고 세로도 될 수가 있다.
-그치만 한 모서리를 가로라고 지정하면 다른 모서리는 세로가 되어야 옳다.
+ * Hint ) 명함을 회전해서 수납할 수 있다 -> 어떤 길이든 가로가 될 수도 있고 세로도 될 수가 있다.
 
-두 개의 모서리를 비교하여 큰 값을 전부 가로 작은 값을 전부 세로로 두면
-각 모서리의 길이의 최댓값이 답이 되지않을까?
+가로  세로
+60  50
+30  70
+60  30
+80  40
 
- 80 60 70 60
- 50 30 30 40
+가로와 세로 중, 가장 긴 길이를 수용할 곳을 가로로 설정한다면
+가로에는 80 60 60 70(명함 회전)
+세로에는 30(명함 회전) 30 40 50
+
+이때, 모든 명함들을 수납하려면 80 * 50 의 직사각형 크기가 필요하다.
+최대의 최대 값과 최소의 최대 값을 찾아서 곱해주면 된다.
  */
 fun main() {
     println(solution(
@@ -28,22 +36,17 @@ fun main() {
 }
 
 private fun solution(sizes: Array<IntArray>): Int {
-    var answer: Int = 0
-    val widthList = mutableListOf<Int>()
-    val heightList = mutableListOf<Int>()
+//    val widths = mutableListOf<Int>()
+//    val heights = mutableListOf<Int>()
+//
+//    // 가로를 최대 길이를 수용할 곳으로 설정한다면
+//    sizes.forEach {
+//        widths.add(max(it[0], it[1]))
+//        heights.add(min(it[0], it[1]))
+//    }
+//
+//    val answer = widths.max() * heights.max()
 
-    for(size in sizes) {
-        if(size[0] > size[1]) {
-            widthList.add(size[0])
-            heightList.add(size[1])
-        } else {
-            widthList.add(size[1])
-            heightList.add(size[0])
-        }
-    }
-    widthList.sortDescending()
-    heightList.sortDescending()
-
-    answer = widthList[0] * heightList[0]
+    val answer = sizes.maxOf { it.maxOrNull()!! } * sizes.maxOf { it.minOrNull()!! }
     return answer
 }
