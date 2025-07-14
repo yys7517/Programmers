@@ -23,8 +23,6 @@ fun main() {
 }
 
 private fun solution(answers: IntArray): IntArray {
-    var ret = intArrayOf()
-
     val student1 = intArrayOf(1,2,3,4,5)
     val student2 = intArrayOf(2,1,2,3,2,4,2,5)
     val student3 = intArrayOf(3,3,1,1,2,2,4,4,5,5)
@@ -47,20 +45,13 @@ private fun solution(answers: IntArray): IntArray {
         }
     }
 
-    val tempList = mutableListOf<Int>()
-    var max = 0
-    for( count in counts ) {
-        if( count > max ) max = count
-    }
+    val result = mutableListOf<Int>()
 
-    for( idx in counts.indices ) {
-        if(counts[idx] == max) {
-            tempList.add(idx+1)
+    counts.forEachIndexed { i, count ->
+        if( count == counts.maxOrNull()!! ) {
+            result.add(i+1)
         }
     }
 
-    tempList.sort()
-
-    ret = tempList.toIntArray()
-    return ret
+    return result.sorted().toIntArray()
 }
